@@ -1,0 +1,17 @@
+*** La aplicación de control de gastos esta dentro de la carpeta "Portafolio" ***
+
+Dentro de la carpeta "Control de gastos" se encuentran los siguientes archivos que conforman la aplicacion:
+ 
+App.html
+AppCode.js
+GastosStyle.css
+
+Esto se debe a que la aplicacion de "Control de gastos" forma parte de una pagina personal
+que se fue creando en el transcurso del curso de "Programación". Gracias por su comprension
+___________________________________________________________________________________-
+
+El subdominio del hosting al que esta alojado esta aplicación Web es la siguiente.
+
+http://edgarlaynez.byethost16.com/Portafolio/GastosSemanal/App.html
+
+donde podra acceder directamente a la aplicacion  de "Control de gastos" y podra navegar en la pagina personal

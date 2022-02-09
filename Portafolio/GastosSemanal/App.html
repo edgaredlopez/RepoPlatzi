@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--  <link rel="stylesheet" href="/Proyecto Final/Style.css"> -->
+   <link rel="shortcut icon" href="../../Imagenes/LogoPestaña.ico">
+   <link rel="stylesheet" href="GastosStyle.css">
+   <link rel="stylesheet" href="../../EstilosCSS/StyleNavegacion.css">
+    
+    <title>  Gastos semanales</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header  class="Header">
+        <!-- Barra de navegacion -->
+        <nav>
+            <ul class="Marca">
+                <li class="Marca__Logo">  
+                    <a href="../../index.html">
+                        <img src="../../Imagenes/Logo-edbyte.png" alt="Logo de la empresa">     
+                    </a>
+                </li>
+                <li class="Marca__Slogan">
+                    <a href="../../index.html">
+                        <img src="../../Imagenes/TextoLogo.png" alt="Nombre de la empresa">
+                    </a>
+                </li>
+            </ul>
+
+
+            <ul class="NavegacionP" >
+                <li  class="NavegacionP__Item" id="Home"> 
+                    <a href="../../index.html" class="NavegacionP__Item--LinkN">  
+                        <span id="IconNavHome"></span>
+                        <span class="TextNav">Inicio</span>
+                        
+                    </a>
+                </li>
+                <li class="NavegacionP__Item" id="Porta"> 
+                    <a href="App.html" class="NavegacionP__Item--LinkN"> 
+                        <span id="IconNavPortafolio"></span>
+                        <span class="TextNav">Portafolio</span> 
+                    </a>
+                </li>
+                <li class="NavegacionP__Item" id="Forma"> 
+                    <a href="" class="NavegacionP__Item--LinkN"> 
+                        <span id="IconNavFormacion"></span>
+                        <span class="TextNav">Formación</span>
+                    </a>
+                </li>
+                <li class="NavegacionP__Item" id="Blog"> 
+                    <a href="" class="NavegacionP__Item--LinkN"> 
+                        <span id="IconNavBlog"></span>
+                        <span class="TextNav">Blog</span> 
+                    </a>
+                </li>
+                <li class="NavegacionP__Item" id="Sobre">
+                     <a href="" class="NavegacionP__Item--LinkN"> 
+                        <span id="IconNavSobreMi"></span>
+                        <span class="TextNav">Sobre mi</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <main class="ContenedorMain">
+
+        <div  id="Applicacion" class="FondoPrimario">
+            <picture >
+                <img  class="FondoPrimario__ImagenFondo"src="../../Imagenes/FondoPasto.jpg" alt="Fondo de Pasto">
+                <img class="ImagenMonoMirando" src="../../Imagenes/astro-mona.webp"  alt="Mona observa la actividad de presupuesto" width="960" height="967">
+            </picture>
+
+            <!-- PDF -->
+            <section class="DescargarPDF">
+                
+                    <a href="../../Documentos/01- Documentación de Software - Edgar López Laynez.pdf" download="01- Documentación de Software - Edgar López Laynez.pdf" target="_black" > 
+                        <span id="IconDowload"></span>
+                        <span id="TituloDowload">Descargar documentación del software.</span>
+                    </a>
+            </section>
+            
+            <section class="SecFondo">
+        
+                <h1 class="SecFondo__Titulo">Gastos Semanales</h1>
+
+                <!--Formularios-->
+                <form action="" class="SecFondo__Formulario" id="FormularioEntrada">
+                    <h2 class="SecFondo__Formulario__SubTitulo">Ingrese sus gastos aquí</h2>
+
+                    <label for="NomGastos" class="SecFondo__Formulario__Label1">
+                        <span class="SecFondo__Formulario__Label1--Gastos" >Descripción:</span>
+                        <input  type="text" id="NomGastos" placeholder="Nombre del gasto" class="SecFondo__Formulario__Label1--GastosInput">
+                    </label>
+                    <label for="CantGastos" class="SecFondo__Formulario__Label2">
+                        <span class="SecFondo__Formulario__Label2--Cantidad" >Monto:</span>
+                        <input  type="number" step="0.01" id="CantGastos" placeholder="Monto en Quetzales" class="SecFondo__Formulario__Label2--CantidadInput">
+                    </label>
+
+                    <input   type="submit" value="Agregar gasto" class="SecFondo__Formulario__Boton">
+                </form>
+                
+
+                <section class="SecFondo__Resultados" >
+                    <h2 class="SecFondo__Formulario__SubTitulo2">Listado de gastos</h2>
+                    
+                    <div class="ListadoObtenidoJS">
+                        <div  id="ContenedorSalida">
+                            <span id="MensajeDefault">No hay datos ingresados aún...</span>
+                        </div>
+                    </div>
+                    
+            
+                    <label for="PresupuestoInicial" class="PresupuestoContent">
+                        <span class="PrespuestoEtiqueta" >Presupuesto inicial:</span>
+                        <input  type="number" id="PresupuestoInicial" value="0" placeholder="Q 5000" class="InputPresupuesto">
+                    </label>
+                    
+                    <section class="ContenedorRestante">
+                        <span class="RestanteEtiqueta" >Presupuesto restante:</span>
+                        <div class="MostrarRestante" id="ConteneodorInputRestante"> 
+                            <div class="TextDefault" id="MontoRestante1">---</div>
+                         </div>
+                    </section>  
+
+                    <section class="ContenedorTotalGastado">
+                        <span class="TotalEtiqueta" >Total gastado:</span>
+                        <div class="MostrarTotal" id="ContenedorInputTotal"> 
+                            <div class="TextDefaultTotal" id="MontoTotal">---</div>
+                         </div>
+                    </section>                  
+                </section>
+
+            </section> 
+        </div>
+
+
+    </main>
+    <script type="text/javascript" src="AppCode.js"></script>
+
+    <footer class="Footer">
+        <h2 class="Footer__CreadaPor">Pagina web creada por:</h2>
+        <h3 class="Footer__Nombre">Edgar López Laynez</h3>
+        <p class="Footer__Parafo">
+            Esta aplicación de "Presupuesto semanal" fué creada como
+            parte de un proyecto final en el curso  de "Programacion III" 
+            en la "Universidad Panamericana de Guatemala" en mayo de 2,021.
+            <br>
+            Las tecnologías usadas en esta aplicacion son: HTML, CSS y Java Script.
+        </p>
+        <picture>
+            <a href=""> <img class="Footer__Facebook" src="../../Imagenes/Iconos/Facebook.png" alt="Icono de Facebook"> </a>
+            <a href=""> <img class="Footer__Instagram"src="../../Imagenes/Iconos/instagram.png" alt="Icono de Instagram"></a>
+            <a href=""> <img class="Footer__Tiktok" src="../../Imagenes/Iconos/Tiktok.png" alt="Icono de Tiktok"></a>
+            <a href=""> <img class="Footer__Twitter" src="../../Imagenes/Iconos/Twitter.png" alt="Icono de Twitter"></a>
+            <a href=""> <img class="Footer__Whatsapp"src="../../Imagenes/Iconos/Whatsapp.png" alt="Icono de Whatsapp"></a>
+        </picture>
+        
+<!--         <img  class="ImagenMonos" src="https://github.githubassets.com/images/modules/site/home/footer-illustration.svg" alt="">
+ -->
+    
+    
+    </footer>
+</body>
+</html>

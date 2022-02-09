@@ -1,0 +1,670 @@
+
+/* Estilos universales */
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+html
+{
+    font-size: 62.5%;
+}
+
+main
+{
+    display: grid;
+   
+}
+
+/* Fondos principales */
+.FondoPrimario
+{
+    height: 60rem;
+    position: relative;
+
+
+}
+
+.FondoPrimario__ImagenFondo
+{
+    width: 100%;
+    height:60rem;
+    position:absolute;
+    min-width: 1000px;
+    min-height: 600px;
+    z-index: 10;
+
+}
+
+/* Fondo donde iran las cajas de formulario */
+.SecFondo
+{
+    width: 64%;
+    height: 70vh;
+    min-width: 800px;
+    min-height: 460px;
+    position: relative;
+    margin: 0 auto ;
+    top: 10%;
+    bottom: 15%;
+   
+    background-color: rgba(10, 168, 216, 0.555);
+    /* background-color: rgba(10, 216, 188, 0.39); */
+    border: rgb(36, 36, 36) ;
+  /*   border-radius: 1.5rem; */
+    z-index: 20;
+    box-shadow: 0px 50px 50px rgb(0, 0, 0);
+
+    
+}
+
+.SecFondo__Titulo
+{
+    position: relative;
+    
+    width: 30rem;
+    height: 3.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+   /*  color: rgb(230, 222, 222); */
+    
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    z-index: 50;
+    
+}
+
+
+
+/* Fondo de la primera caja de formulario */
+.SecFondo__Formulario
+{
+    position: absolute;
+    
+    left: 3%;
+    top: 10%;
+    bottom: 2%;
+    width: 45%;
+    height: 85%;
+
+   
+
+    background-color: rgba(35, 40, 41, 0.651);
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.801);
+    z-index: 20;
+    overflow-y: auto;
+    /* justify-content: center;  */
+}
+.SecFondo__Formulario__SubTitulo
+{
+    position: relative;
+    top: 2rem;
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+.SecFondo__Formulario__SubTitulo2
+{
+    position: relative;
+    top: 0rem;
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 4%;
+    padding-bottom: 6px;
+    border-bottom: rgba(212, 210, 210, 0.787) solid 2px;
+}
+
+
+
+/* Va codigo para la PRIMERA etiqueta de llenado */
+.SecFondo__Formulario__Label1
+{
+    position: relative;
+    top: 20%;
+    left: 10%;
+    display: inline-block;
+    height: 30%;
+    width: 80%;
+}
+.SecFondo__Formulario__Label1--Gastos
+{
+    
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+    color: rgb(206, 203, 203);
+    font-weight: bold;
+}
+.SecFondo__Formulario__Label1--GastosInput
+{
+    position: relative;
+    top: 8%;
+    height: 30%;
+    width: 90%;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+.SecFondo__Formulario__Label1--GastosInput:focus
+{
+    box-shadow: 0 0 20px rgba(0, 183, 255, 0.767);
+}
+
+
+
+/* Va codigo para la SEGUNDA etiqueta de llenado */
+
+.SecFondo__Formulario__Label2
+{
+    position: relative;
+    top: 15%;
+    left: 10%;
+    display: inline-block;
+    height:30%;
+    width: 80%;
+
+}
+.SecFondo__Formulario__Label2--Cantidad
+{
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+    color: rgb(206, 203, 203);
+    font-weight: bold;
+}
+.SecFondo__Formulario__Label2--CantidadInput
+{
+    position: relative;
+    height: 30%;
+    width: 90%; 
+    top: 7%;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+.SecFondo__Formulario__Label2--CantidadInput:focus
+{
+    box-shadow: 0 0 20px rgba(0, 183, 255, 0.767);
+}
+
+/* Estilo del boton agregar en el primer formulario */
+
+.SecFondo__Formulario__Boton
+{
+    position: relative;
+    top: 14%;
+    left: 25%;
+    width: 50%;
+    height: 10%;
+    background-color: rgb(22, 209, 194);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 10px 25px black;
+    font-style:italic;
+    font-size: 2rem;
+    color: rgb(47, 46, 46);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.SecFondo__Formulario__Boton:active
+{
+    background-color: rgb(211, 184, 34);
+}
+.SecFondo__Formulario__Boton:hover
+{
+    box-shadow: 0 0 20px rgba(0, 183, 255, 0.842);
+}
+
+
+
+
+
+
+.ImagenMonoMirando
+{
+    position:absolute;
+   
+    width: 25%;
+    height: 50%;
+    top:56%;
+    bottom: -20%;
+    left: 72vw;
+    z-index:100;  
+    
+}
+
+
+
+footer
+{
+    background-color: rgb(5, 5, 5);
+    
+    height: auto;
+    position: relative;
+    
+    z-index: 80;
+}
+/* .ImagenMonos
+{
+    
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 60%;
+    height: 30%;
+    
+    z-index: -1;
+
+} */
+
+.Footer__CreadaPor
+{
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-style: italic;
+}
+.Footer__Nombre
+{
+    position: relative;
+    top: 4%;
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Kaushan Script' ;
+}
+.Footer__Parafo
+{
+    position: relative;
+    top: 8%;
+    color: white;
+    text-align:center;
+    margin: 2rem auto;
+    width: 50%;
+    height: 50%;
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.Footer__Facebook
+{
+    position: relative;
+    width: 4rem;
+    top: 0%;
+    left: 40%;
+    margin-right: 1%;
+    padding-bottom: 2rem;
+}
+.Footer__Facebook:hover
+{
+    filter: hue-rotate(5deg) brightness(30%); 
+}
+
+.Footer__Instagram
+{
+    position: relative;
+    width: 4rem;
+    top: 0%;
+    display: inline-block;
+   left: 40%;
+   margin-right: 1%;
+   padding-bottom: 2rem;
+
+}
+.Footer__Instagram:hover
+{
+    filter: hue-rotate(5deg) brightness(30%); 
+}
+.Footer__Tiktok
+{
+    position: relative;
+    width: 4rem;
+    top: 0%;
+    display: inline-block;
+    left: 40%;
+    margin-right: 1%;
+    padding-bottom: 2rem;
+}
+.Footer__Tiktok:hover
+{
+    filter: hue-rotate(5deg) brightness(30%); 
+}
+.Footer__Twitter
+{
+    position: relative;
+    width: 4rem;
+    top: 0%;
+    display: inline-block;
+    left: 40%;
+    margin-right: 1%;
+    padding-bottom: 2rem;
+}
+.Footer__Twitter:hover
+{
+    filter: hue-rotate(5deg) brightness(30%); 
+}
+.Footer__Whatsapp
+{
+    position: relative;
+    width: 4rem;
+    top: 0%;
+    display: inline-block;
+    left: 40%;
+    margin-right: 1%;
+    padding-bottom: 2rem;
+}
+.Footer__Whatsapp:hover
+{
+    filter: hue-rotate(5deg) brightness(30%); 
+}
+
+
+
+/* Estilo a las notificaciones */
+
+/* Mensaje de alerta cuando algo salio mal */
+.-dangerAppEd
+{
+    position: absolute;
+    z-index: 150;
+    background-color:  #f2f2f2;
+    color: rgb(0, 0, 0);
+    width: 30%;
+    height: 3rem;
+    font-size: 2.2rem;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    top: 85%;
+
+    border-radius: 100px;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.801);
+}
+
+/* Mensaje de notificacion exitosa */
+.-successAppEd
+{
+    position: absolute;
+    z-index: 150;
+    background-color: #f2f2f2;
+    color: rgb(0, 0, 0);
+    width: 30%;
+    height: 3rem;
+    font-size: 2.2rem;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    top: 92%;
+    border-radius: 100px;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+}
+
+/* Estilo de contenedor salida */
+
+.SecFondo__Resultados
+{
+    display: inline-block;
+    position:relative;
+    left: 50.5%;
+    top: 3%;
+    bottom: 1%;
+    width: 47%;
+    height: 84.5%;
+    background-color: rgba(35, 40, 41, 0.651);
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: 0 0 35px white;
+    z-index: 50;
+    padding: 10px 10px;
+    
+    justify-content: center;  
+    /* overflow-x: scroll */;
+}
+
+
+.ElementoNuevo
+{
+    margin-left: 4%; 
+    margin-bottom: 4%;  
+}
+.SecFondo__Resultados
+{
+   
+    font-size: 2rem;
+    color: white;
+}
+
+/* Boton de eliminar  */
+.btn-danger
+{
+    color: rgb(255, 208, 0);
+    margin-left: 10px;
+}
+
+.btn-danger:hover
+{
+    filter: invert(50%)
+}
+
+.SecFondo__Resultados .ListadoObtenidoJS
+{
+    
+    height: 60%;
+    display: inline-block;
+    width:100%;
+    position:relative;
+    overflow-y: auto;
+    border: 2px solid ;
+
+}
+#MensajeDefault
+{
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    text-align: center;
+    display: flex;
+    margin-top: 14%;
+    font-weight: 700;
+    color: rgb(212, 211, 211);
+}
+
+
+/* Diseñando area de presupuesto y dinero restante */
+.PresupuestoContent
+{
+    background-color: red;
+    width: 50%;
+    position: relative;
+    display: flex;
+    top: 5px;
+   
+
+
+}
+.PrespuestoEtiqueta
+{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    display: flex;
+    font-style:normal;
+    
+    
+}
+.InputPresupuesto
+{
+    position: absolute;
+    width: 66%;
+    height: 30px;
+    top:25px;
+    left:20px;
+    background-color: rgb(46, 207, 228);
+    border: none;
+    border-radius: 10px;
+    padding: 0px 20px;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+
+.ContenedorRestante
+{
+    
+    position: relative;
+    width: 60%;
+    left: 46%;
+    display: flex;
+    top: 5px;
+    justify-content: center;
+}
+
+.RestanteEtiqueta
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    display: flex;
+
+
+}
+.MostrarRestante
+{
+    position: absolute;
+    width: 50%;
+    height: 30px;
+    top:25px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 2rem;
+}
+.TextDefault
+{
+    display: flex;
+    justify-content: center;
+    color: black;
+    
+    
+}
+
+
+
+
+
+/* Para los totales */
+.ContenedorTotalGastado
+{
+    
+    position: absolute;
+    width: 100%;
+    left: -3%;
+    top: 92%;
+    display: flex;
+    
+   
+ 
+}
+
+.TotalEtiqueta
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    display: flex;
+    position: absolute;
+    left: 8%;
+    top: 2px;
+ 
+    
+}
+.MostrarTotal
+{
+    position: absolute;
+    width: 30%;
+    height: 30px;
+    top:-2px;
+    left: 40%;
+    background-color:  rgb(46, 207, 228);
+    border: none;
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 2rem;
+
+}
+.TextDefaultTotal
+{
+    display: flex;
+    justify-content: center;
+    color: black;
+    
+    
+}
+
+
+.DescargarPDF
+{
+    
+    position: absolute;
+    display: grid;
+    z-index: 600;
+    width: 15%;
+    height: 80px;
+    top: 50%;
+}
+.DescargarPDF a
+{
+    font-size: 2rem;
+    display: grid;
+    justify-self: center;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+
+}
+.DescargarPDF #IconDowload
+{
+    background-image: url('../../Imagenes/Iconos/cloud-download-outline.svg');
+  
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    z-index: 200;
+    filter: invert(100);
+    top: 0px;
+    justify-self: center;
+  
+    
+}
+#TituloDowload
+{
+    position: absolute;
+   top: 40px;
+    display: flex;
+    justify-self: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.DescargarPDF a:hover
+{
+    /* color: #43a4f3; */
+    filter: invert(50%)
+}

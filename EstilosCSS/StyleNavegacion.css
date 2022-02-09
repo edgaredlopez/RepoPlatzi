@@ -1,0 +1,224 @@
+/* Estilos de la barra de navegacion  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 62.5%;
+}
+
+
+
+header
+{
+    width: 100%;
+    height: 50px;
+}
+
+header nav
+{
+    width: 100%;
+    height: 50px;
+    background-color:#0f1b36;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 70;
+    box-shadow: 0 0 50px 20px #000000;
+    top: 0%;
+    
+    
+}
+
+.Marca
+{
+  
+    width: 100%;
+    height: 50px;
+}
+
+.Marca__Logo a
+{ 
+    width: 70%;
+    height: 70%;
+    position:absolute;
+    top:0.9rem;
+    display: flex;
+    left: 1.2rem;
+    
+}
+
+.Marca__Slogan a
+{
+    width: 65px;
+    height: 35px;
+    position:absolute;
+    left: 6rem;
+    top:0.9rem;
+    display: flex;
+    justify-content: center;
+    z-index: 110;
+}
+
+
+.NavegacionP
+{
+    
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: relative;
+    justify-content: right;
+}  
+
+.NavegacionP__Item 
+{
+    list-style: none;
+    height: 50px;
+    width: 100px;
+    text-decoration: none;
+    /* background-color: blue; */
+    margin-right: 20px; 
+}
+
+#Home
+{
+    width:70px;
+}
+#Blog
+{
+    width:65px;
+}
+#Sobre
+{
+    width:100px;
+}
+
+
+.NavegacionP__Item a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Roboto,sans-serif;
+    
+    position: relative;
+    top: 17px;
+ 
+    
+    
+}
+
+.NavegacionP__Item a .TextNav
+{
+    margin: 15px 0px 0px 30px;
+    position: absolute;
+    padding: 0;
+    width:70px;
+    /* background-color: brown; */
+    
+  
+}
+
+#IconNavHome
+{
+    background-image: url('home-outline.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    display: flex;
+    z-index: 200;
+    filter: invert(100);
+    top: 10px;
+    margin-right: 10px;
+} 
+#IconNavPortafolio
+{
+    background-image: url('briefcase-outline\(1\).svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    display: flex;
+    z-index: 200;
+    filter: invert(100);
+    top: 10px;
+    margin-right: 10px;
+} 
+#IconNavFormacion
+{
+    background-image: url('ribbon-outline.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    display: flex;
+    z-index: 200;
+    filter: invert(100);
+    top: 10px;
+    margin-right: 10px;
+} 
+#IconNavBlog
+{
+    background-image: url('reader-outline.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    display: flex;
+    z-index: 200;
+    filter: invert(100);
+    top: 10px;
+    margin-right: 10px;
+}
+#IconNavSobreMi
+{
+    background-image: url('person-circle-outline\(1\).svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    display: flex;
+    z-index: 200;
+    filter: invert(100);
+    top: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+/*  .NavegacionP__Item a::before
+{
+    position: relative;
+    content: "|";
+    margin-right: 10px;  
+    margin-left: 13px;
+    
+    
+}  */
+
+ .NavegacionP__Item a:hover
+{
+    /* color: #43a4f3; */
+    filter: invert(50%)
+}
+.NavegacionP__Item__LinkN:active
+{
+    color: black;
+} 
+
