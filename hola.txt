@@ -1,4 +1,8 @@
-Hola compañeros estudiantes del IMDI, estoy programando y hoy
+Hola compañeros estudiantes del IMDI,
+
+
+
+ estoy programando y hoy
 estoy dandoles un curso de programación básica para que vean lo hermoso
 que es la programación y lo fácil que puede llegar a ser para ustedes
 si le echan ganas.
